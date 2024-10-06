@@ -45,7 +45,7 @@ header form {
 
 header input[type="search"] {
     padding: 8px;
-    font-size: 15   px;
+    font-size: 15px;
     border: 2px solid #ffffff;
     border-radius: 8px;
     margin-right: 10px;
@@ -70,7 +70,6 @@ header button {
 header button:hover {
     background-color: #d63031;
     transform: scale(1.05);
-
 }
 
 nav {
@@ -82,6 +81,12 @@ nav {
 nav ul {
     display: flex;
     justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
 }
 
 nav ul li a {
@@ -94,8 +99,37 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #d63031;
-    border-radius: 8px;
+    border-radius: 10px;
     transform: scale(1.05);
+}
+
+nav ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    padding: 1px;
+    border: 2px solid #ddd;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+nav ul li .submenu li {
+    display: block;
+}
+
+nav ul li .submenu li a {
+    padding: 10px;
+    width: 150px;
+    color: #000;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul li .submenu li a:hover {
+    background-color: #f1f1f1;
 }
 
 main {
@@ -106,78 +140,50 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    header input[type="search"] {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li a {
-        text-align: center;
-    }
-    main{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-.bienvenida{
+.bienvenida {
     text-align: center;
     border: 2px black solid;
     border-radius: 10px;
     padding: 10px;
 }
-.servicios{
+
+.servicios {
     text-align: center;
     margin-top: 30px;
     border: 2px black solid;
     border-radius: 10px;
     padding: 10px;
 }
-.galeria{
+
+.galeria {
     text-align: center;
     margin: 20px;
     border: 2px black solid;
     padding: 10px;
     border-radius: 10px;
 }
-.galeria h2{
-    text-align: center;
-    margin-top: 30px;
-    border: 2px black solid;
-    border-radius: 10px;
-    padding: 10px;
-    display: inline-block;
-}
-.imagenes{
+
+.imagenes {
     border-radius: 10px;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-.imagenes img{
+
+.imagenes img {
     max-width: 250px;
     border: 2px black solid;
     padding: 5px;
     border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     transition: transform 0.3s;
 }
+
 .imagenes img:hover {
     transform: scale(1.05);
 }
-#ul1 li{
+
+#ul1 li {
     list-style-type: none;
     margin-bottom: 10px;
     text-align: center;
@@ -188,22 +194,11 @@ main {
     cursor: pointer;
     inline-size: 200px;
 }
-li:hover{
+
+li:hover {
     background-color: #d63031;
-    border-radius: 10px;
-    transform: scale(1.05);
-
-
-}
-h2{
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 20px;
-    border: 2px #000000 solid;
-    border-radius: 5px;
-    display: inline-block;
-    padding: 5px;
-}
+    border-radius: 10px; 
+} 
 .contacto{
     text-align: center;
     margin: 20px;
@@ -242,7 +237,6 @@ h2{
     background-color: #d63031;
     transform: scale(1.05); 
 }
-
 .sr-only {
     position: absolute;
     width: 1px;
@@ -253,4 +247,3 @@ h2{
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
-
