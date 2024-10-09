@@ -39,11 +39,12 @@ header .logo {
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 500&;
 }
 
 header form {
     display: flex;
+    width: 40%;
 }
 
 header input[type="search"] {
