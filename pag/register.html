@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-regis.css">
+    <title>Registro</title>
+</head>
+<body>
+    <main class="contenedor">
+        <h1>Pets</h1>
+        <form action="/register" method="POST">
+            <h1>Register</h1>
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre:">
+                <input type="text" id="apellido" name="apellido" required placeholder="Apellido">
+                <select id="sexo" name="sexo" required>
+                    <option value="">Sexo</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <select id="tipoIdentificacion" name="tipoIdentificacion" required>
+                    <option value="">Tipo de identificacion</option>
+                    <option value="CC">Cédula de Ciudadanía (CC)</option>
+                    <option value="TI">Tarjeta de Identidad (TI)</option>
+                    <option value="CE">Cédula de Extranjería (CE)</option>
+                </select>
+                <input type="text" id="numeroIdentificacion" name="numeroIdentificacion" required placeholder="Numero de identificacion">
+                <input type="email" id="email" name="email" required placeholder="Email">
+                <input type="password" id="password" name="password" required placeholder="Contraseña">
+                <input type="password" id="confirmarPassword" name="confirmarPassword" required placeholder="Confirmar contraseña">
+                <p class="registrar">¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+                <input type="submit" value="Registrarse">
+        </form> 
+            <button class="volver"><a href="mascotas.html">volver</a></button>       
+    </main>
+</body>
+</html>

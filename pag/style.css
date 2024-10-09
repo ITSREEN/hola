@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+body {
+    background: url("https://img.freepik.com/vector-gratis/fondo-patron-huesos-huellas_1374-18.jpg?w=826&t=st=1728435914~exp=1728436514~hmac=b7a1709404a0581cc2958ef9848db50d2520b2bc8a00eb657f110e54f510e7de")no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 2px #000000 solid;
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff7675;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+
+header .logo {
+    width: 80px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header form {
+    display: flex;
+}
+
+header input[type="search"] {
+    padding: 8px;
+    font-size: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+}
+
+header input[type="search"]:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+header button {
+    padding: 8px 12px;
+    background-color: #253a3f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #d63031;
+    transform: scale(1.05);
+}
+
+nav {
+    margin-top: 20px;
+    background-color: #2d3436;
+    border-radius: 8px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #d63031;
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+nav ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    padding: 1px;
+    border: 2px solid #ddd;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+nav ul li .submenu li {
+    display: block;
+}
+
+nav ul li .submenu li a {
+    padding: 10px;
+    width: 150px;
+    color: #000;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul li .submenu li a:hover {
+    background-color: #f1f1f1;
+}
+
+main {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(254, 244, 244);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bienvenida {
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.servicios {
+    text-align: center;
+    margin-top: 30px;
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.galeria {
+    text-align: center;
+    margin-top : 20px;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.imagenes {
+    border-radius: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.imagenes img {
+    max-width: 250px;
+    border: 2px black solid;
+    padding: 5px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.imagenes img:hover {
+    transform: scale(1.05);
+}
+
+#ul1 li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    inline-size: 200px;
+}
+
+li:hover {
+    background-color: #d63031;
+    border-radius: 10px; 
+} 
+.contacto{
+    text-align: center;
+    margin: 20px;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contacto form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto label{
+    margin-bottom: 5px;
+}
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea{
+    width: 100%; 
+    max-width: 400px; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+.contacto button {
+    padding: 10px 20px; 
+    background-color: #253a3f; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}   
+.contacto button:hover {
+    background-color: #d63031;
+    transform: scale(1.05); 
+}
+footer{
+    background-color: #2d3436;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
