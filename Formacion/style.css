@@ -1,0 +1,13 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+
+section{
+    width: 80%;
+    min-width: 320px;
+    max-width: 500px;
+    background-color:rgb(171, 171, 221);
+    border: 1px solid;
+}
